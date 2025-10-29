@@ -1,5 +1,7 @@
 {
 	"files.associations": {
-		"math.h": "c"
+		"math.h": "c",
+		"fractol.h": "c",
+		"stddef.h": "c"
 	}
 }

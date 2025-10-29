@@ -6,7 +6,7 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "/nfs/homes/armeneze/projetos_formacao_cadetes/fractol/fractol",
-      "args": [],
+      "args": ["Mandelbrot"],
       "stopAtEntry": true,
       "cwd": "${workspaceFolder}",
       "environment": [],

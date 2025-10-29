@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   my_mlx_pixel_put.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: armeneze <armeneze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 15:21:05 by armeneze          #+#    #+#             */
-/*   Updated: 2025/10/29 11:32:17 by armeneze         ###   ########.fr       */
+/*   Created: 2025/10/28 14:00:22 by armeneze          #+#    #+#             */
+/*   Updated: 2025/10/28 14:00:51 by armeneze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Imlx_linux/mlx.h"
 #include "fractol.h"
 
-int	main(int argc, char **argv)
+void	my_mlx_pixel_put(t_data *lmx, int x, int y, int color)
 {
-	if (argc == 1)
-		return (0);
-	if (ft_strncmp(argv[1], "Julia", 5) == 0)
+	char	*dst;
+
+	if (x >= 0 && x < 1080 && y >= 0 && y < 1080)
 	{
-		start_fractol("Julia", 0, 0);
+		dst = lmx->addr + (y * lmx->line_length + x
+				* (lmx->bits_per_pixel / 8));
+		*(unsigned int *)dst = color;
 	}
-	else if (ft_strncmp(argv[1], "Mandelbrot", 10) == 0)
-		start_fractol("", 0, 0);
-	return (0);
 }

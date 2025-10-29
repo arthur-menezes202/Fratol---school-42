@@ -6,13 +6,13 @@
 /*   By: armeneze <armeneze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 13:23:21 by armeneze          #+#    #+#             */
-/*   Updated: 2025/10/28 09:33:16 by armeneze         ###   ########.fr       */
+/*   Updated: 2025/10/29 11:17:36 by armeneze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-void	generate_fractal(t_data **img, t_min_max min_max, t_info_window info)
+void	generate_fractal(t_data *img, t_min_max min_max, t_info_window info)
 {
 	t_info_calc_fractol	*info_calc_fractol;
 	double				zoom_x;
@@ -33,9 +33,9 @@ void	generate_fractal(t_data **img, t_min_max min_max, t_info_window info)
 		{
 			info_calc_fractol->c_real = min_max.min_x + x * zoom_x;
 			info_calc_fractol->c_imag = min_max.min_y + y * zoom_y;
-			iterations = burning_ship(0.0, 0.0, info_calc_fractol, info.max_iter);
+			iterations = mandelbrot(0.0, 0.0, info_calc_fractol, info.max_iter);
 			color = get_smooth_color(iterations, info.max_iter);
-			my_mlx_pixel_put(*img, x, y, color);
+			my_mlx_pixel_put(img, x, y, color);
 			y ++;
 		}
 		y = 0;
@@ -43,7 +43,8 @@ void	generate_fractal(t_data **img, t_min_max min_max, t_info_window info)
 	}
 }
 
-void	calculate_fractol(t_data **img, t_info_window info)
+void	calculate_fractol(t_data *img, t_info_window info,
+	int param1, int param2)
 {
 	t_min_max	min_max;
 
