@@ -1,7 +1,7 @@
 NAME = fractol
 # FLAGS = -Wall -Werror -Wextra
 FLAGS = 
-CC = cc -g3
+CC = cc -O3
 
 #includes
 INCLUDES = -I/usr/include
@@ -37,11 +37,9 @@ $(MINILIBX):
 clean:
 	rm -f $(OBJ)
 	make -C libft clean
-	make -C Imlx_linux fclean
 
 fclean: clean
 	rm -f $(NAME)
 	make -C libft fclean
-	make -C Imlx_linux fclean
 
 re: fclean all
