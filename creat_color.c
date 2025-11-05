@@ -6,15 +6,15 @@
 /*   By: armeneze <armeneze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 18:35:32 by armeneze          #+#    #+#             */
-/*   Updated: 2025/10/27 18:45:41 by armeneze         ###   ########.fr       */
+/*   Updated: 2025/11/05 14:23:36 by armeneze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 
-int	create_trgb(int t, int r, int g, int b)
+int	create_trgb(int r, int g, int b)
 {
-	return (t << 24 | r << 16 | g << 8 | b);
+	return (r << 16 | g << 8 | b);
 }
 
 int	get_smooth_color(int iterations, int max_iter)
@@ -30,5 +30,5 @@ int	get_smooth_color(int iterations, int max_iter)
 	b = (int)(8.5 * (1.0 - t) * (1.0 - t) * (1.0 - t) * t * 255.0);
 	if (iterations == max_iter)
 		return (0x000000);
-	return (create_trgb(0, r, g, b));
+	return (create_trgb(r, g, b));
 }
