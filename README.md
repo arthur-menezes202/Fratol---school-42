@@ -7,7 +7,10 @@
 [](https://www.google.com/search?q=%5Bhttps://www.42sp.org.br/%5D\(https://www.42sp.org.br/\))
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SSTjn6g2JyY?si=5Gb_4uBNWWRMbKbv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <video width="640" autoplay muted controls loop>
+    <source src="./demo.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
 </div>
 
 ## 📝 Visão Geral do Projeto
@@ -15,6 +18,10 @@
 **Fractol** é um projeto que consiste na criação de um programa para gerar e visualizar diferentes tipos de fractais, como o Conjunto de Mandelbrot e o Conjunto de Julia, utilizando a biblioteca gráfica **MiniLibX**.
 
 O desafio reside em calcular e renderizar imagens complexas baseadas em iterações de números complexos, além de implementar interatividade para explorar essas fascinantes estruturas matemáticas.
+
+## 📺 Demonstração Completa
+O projeto possui suporte a renderização em tempo real, manipulação de cores e zoom dinâmico. 
+👉 [Clique aqui para assistir à demonstração completa e detalhada no YouTube](https://www.youtube.com/watch?v=SSTjn6g2JyY).
 
 ## 🎯 Objetivo de Aprendizagem
 
