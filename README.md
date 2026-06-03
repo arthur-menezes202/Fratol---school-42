@@ -7,8 +7,8 @@
 [](https://www.google.com/search?q=%5Bhttps://www.42sp.org.br/%5D\(https://www.42sp.org.br/\))
 
 <div align="center">
-  <video width="340" controls>
-    <source src="./demo.webm" type="video/webm">
+  <video width="640" autoplay muted controls loop>
+    <source src="./demo.mp4" type="video/mp4">
     Seu navegador não suporta a tag de vídeo.
   </video>
 </div>

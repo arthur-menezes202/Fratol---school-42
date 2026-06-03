@@ -6,15 +6,15 @@
 /*   By: armeneze <armeneze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:06:00 by armeneze          #+#    #+#             */
-/*   Updated: 2025/11/05 14:32:30 by armeneze         ###   ########.fr       */
+/*   Updated: 2026/06/03 16:46:15 by armeneze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include "libft/libft.h"
-# include "Imlx_linux/mlx.h"
+# include "../libft/libft.h"
+# include "../Imlx_linux/mlx.h"
 # include <math.h>
 # include <stdlib.h>
 

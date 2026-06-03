@@ -4,7 +4,7 @@ CC = cc
 
 #includes
 INCLUDES = -I/usr/include
-SRCDIR = .
+SRCDIR = src
 
 LIBFT = libft/libft.a
 LIBFT_DIR = libft
