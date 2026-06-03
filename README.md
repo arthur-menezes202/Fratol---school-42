@@ -6,6 +6,13 @@
 [](https://www.google.com/search?q=%5Bhttps://en.wikipedia.org/wiki/Mandelbrot_set%5D\(https://en.wikipedia.org/wiki/Mandelbrot_set\))
 [](https://www.google.com/search?q=%5Bhttps://www.42sp.org.br/%5D\(https://www.42sp.org.br/\))
 
+<div align="center">
+  <video width="340" controls>
+    <source src="./demo.webm" type="video/webm">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+</div>
+
 ## 📝 Visão Geral do Projeto
 
 **Fractol** é um projeto que consiste na criação de um programa para gerar e visualizar diferentes tipos de fractais, como o Conjunto de Mandelbrot e o Conjunto de Julia, utilizando a biblioteca gráfica **MiniLibX**.
